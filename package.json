@@ -1,0 +1,10 @@
+{
+  "name": "tjs-dsa",
+  "version": "0.0.1",
+  "scripts": {
+    "prettify": "prettier --write \"./**/*.{js,jsx,ts,tsx,json,md}\""
+  },
+  "dependencies": {
+    "prettier": "^2.8.8"
+  }
+}
