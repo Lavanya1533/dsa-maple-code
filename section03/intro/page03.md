@@ -21,12 +21,12 @@ let a = 21;
 let b = a;
 
 console.log({ a, b });
-console.log('a===b', a === b);
+console.log("a===b", a === b);
 
 a = 25;
 
 console.log({ a, b });
-console.log('a===b', a === b);
+console.log("a===b", a === b);
 ```
 
 Example 2
@@ -36,17 +36,17 @@ let a = [3, 5, 7, 9];
 let b = a;
 
 console.log({ a, b });
-console.log('a===b', a === b);
+console.log("a===b", a === b);
 
 a[2] = 25;
 
 console.log({ a, b });
-console.log('a===b', a === b);
+console.log("a===b", a === b);
 
 a = [1, 2, 3];
 
 console.log({ a, b });
-console.log('a===b', a === b);
+console.log("a===b", a === b);
 ```
 
 Example 3
@@ -54,14 +54,14 @@ Example 3
 ```js
 let a = 21;
 
-const myFunc = x => {
+const myFunc = (x) => {
   x += 4;
-  console.log('In the function', x);
+  console.log("In the function", x);
 };
 
 myFunc(a);
 
-console.log('Outside the function', a);
+console.log("Outside the function", a);
 ```
 
 Example 4
@@ -69,14 +69,14 @@ Example 4
 ```js
 let a = [1, 2, 3];
 
-const myFunc = x => {
+const myFunc = (x) => {
   x[1] = 4;
-  console.log('In the function', x);
+  console.log("In the function", x);
 };
 
 myFunc(a);
 
-console.log('Outside the function', a);
+console.log("Outside the function", a);
 ```
 
 Example 5
@@ -84,14 +84,14 @@ Example 5
 ```js
 let a = [1, 2, 3];
 
-const myFunc = x => {
+const myFunc = (x) => {
   x = [1, 2, 3];
-  console.log('In the function', x);
+  console.log("In the function", x);
 };
 
 myFunc(a);
 
-console.log('Outside the function', a);
+console.log("Outside the function", a);
 ```
 
 # immutable or not?
@@ -108,7 +108,7 @@ String methods do not change the original variables. They all return a new value
 ## What is the time complexity?
 
 ```js
-let str = '';
+let str = "";
 
 for (let i = 0; i < 10; i++) {
   str += String.fromCharCode(97 + i);
@@ -126,7 +126,7 @@ for (let i = 0; i < 10; i++) {
   arr.push(String.fromCharCode(97 + i));
 }
 
-console.log(arr.join(''));
+console.log(arr.join(""));
 ```
 
 It's O(n)
